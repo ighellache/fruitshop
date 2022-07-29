@@ -1,222 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Shop</title>
+    <head>
+        <title>Fruit EDIT</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="store.js"></script>
+         <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!--to add logos-->
+    </head>
+    <body>
+        <!-- header section starts  -->
+        <header>
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <div class="header-1">
+        
+                <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Fruits&Co</a>
+        
+                <form action="" class="search-box-container">
+                    <input type="search" id="search-box" placeholder="search here...">
+                    <label for="search-box" class="fas fa-search"></label>
+                </form>
+        
+            </div>
+        
+        </header>
+        <!-- header section ends -->
+        <!-- home section starts  -->
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/fruits.css">
+        <section class="home" id="home">
 
-</head>
-<body>
-
-<!-- header section starts  -->
-
-<header>
-
-    <div class="header-1">
-
-        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Fruits&Co</a>
-
-        <form action="" class="search-box-container">
-            <input type="search" id="search-box" placeholder="search here...">
-            <label for="search-box" class="fas fa-search"></label>
-        </form>
-
-    </div>
-
-    <div class="header-2">
-
-        <div id="menu-bar" class="fas fa-bars"></div>
-
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#category">About us</a>
-            <a href="#product">Products</a>
-        </nav>
-
-    </div>
-
-</header>
-
-<!-- header section ends -->
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <div class="image">
-        <img src="images/woman.jpg" alt="">
-    </div>
-
-    <div class="content">
-        <h3>About us</h3>
-        <span>We regularly supply fresh fruit, locally and ethically sourced from our country's best farmers to provide you with the sweetest and most delicious fruits.</span>
-        <h3>your daily need products ADD A REVIEW UNDER WITH STARS, MAYBE LIKE A SLIDE SHOW THING!</h3>
-
-        <a href="#product" class="btn">get started</a>
-    </div>
-
-</section>
+            <div class="image">
+                <img src="images/woman.jpg" alt="">
+            </div>
+        
+            <div class="content">
+                <h3>About us</h3>
+                <span>We regularly supply fresh fruit, locally and ethically sourced from our country's best farmers to provide you with the sweetest and most delicious fruits.</span>
+                <!-- <h3>your daily need products ADD A REVIEW UNDER WITH STARS, MAYBE LIKE A SLIDE SHOW THING!</h3> -->
+                <br><br>
+                <div class="wrapper">
+                    <div class="review">
+                      <i class="fas fa-quote-left quote"></i>
+                      <h4>I have been regularly buying from this company. The food never comes fresh frozen - always fresh, organic and tasty.</h4>
+                      <div class="contents">
+                        <div class="info">
+                          <div class="name">Gordon Ramsay</div>
+                          <div class="job">Chef | Personality</div>
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
+                        </div>
+                        <div class="image">
+                          <img src="images/gordon.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+            </div>
+        
+        </section>
 
 <!-- home section ends -->
 
-<!-- product section starts  -->
-
-<section class="product" id="product">
-
-    <h2 class="heading">latest <span>products</span></h2>
-
-    <div class="box-container">
-
-        <div class="box">
-            <span class="expiry">3+ days</span>
-            <img src="images/banana.jpg" alt="">
-            <h3>Bananas 5 Pack</h3>
-            <h6 class="price">£1.35</h6>
-            <div class="quantity">
-                <span>Quantity: </span>
-                <input type="number" min="1" max="1000" value="1">
-                <span>£0.27/each</span>
+        <section class="container content-section">
+            <h2 class="section-header">LATEST PRODUCTS</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="expiry">3+ days</span>
+                    <span class="shop-item-title">Bananas 5 Pack</span>
+                    <img class="shop-item-image" src="images/banana.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£1.35</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="expiry">3+ days</span>
+                    <span class="shop-item-title">Cherry Punnet 600G</span>
+                    <img class="shop-item-image" src="images/cherries.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£4.00</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="expiry">1+ weeks</span>
+                    <span class="shop-item-title">Oranges each</span>
+                    <img class="shop-item-image" src="images/orange.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£0.30</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="expiry">5+ days</span>
+                    <span class="shop-item-title">Pineapple</span>
+                    <img class="shop-item-image" src="images/Pineapple.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£1.75</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="expiry">4+ days</span>
+                    <span class="shop-item-title">Raspberries 250G</span>
+                    <img class="shop-item-image" src="images/raspberries.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£3.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="expiry">3+ days</span>
+                    <span class="shop-item-title">Strawberries 600G</span>
+                    <img class="shop-item-image" src="images/strawberries.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£3.00</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="expiry">3+ days</span>
+                    <span class="shop-item-title">Watermelon</span>
+                    <img class="shop-item-image" src="images/watermelon.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£3.10</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="expiry">4+ days</span>
+                    <span class="shop-item-title">Green Grapes 500G</span>
+                    <img class="shop-item-image" src="images/grape.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£2.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="expiry">3+ days</span>
+                    <span class="shop-item-title">Gala Apple 5 Pack</span>
+                    <img class="shop-item-image" src="images/apple.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£1.70</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
             </div>
-            <button href="#" class="btn">Add to cart</button>
-        </div>
-
-        <div class="box">
-            <span class="expiry">3+ days</span>
-            <img src="images/cherries.jpg" alt="">
-            <h3>Cherry Punnet 600G</h3>
-            <h6 class="price">£4.00</h6>
-            <div class="quantity">
-                <span>Quantity: </span>
-                <input type="number" min="1" max="1000" value="1">
-                <span>£0.67/100g</span>
+        </section>
+       
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
             </div>
-            <button href="#" class="btn">Add to cart</button>
-        </div>
-
-        <div class="box">
-            <span class="expiry">1+ weeks</span>
-            <img src="images/orange.jpg" alt="">
-            <h3>Oranges each</h3>
-            <h6 class="price"> £0.30</h6>
-            <div class="quantity">
-                <span>Quantity: </span>
-                <input type="number" min="1" max="1000" value="1">
-                <span> £0.30/each</span>
+            <div class="cart-items">
             </div>
-            <button href="#" class="btn">Add to cart</button>
-        </div>
-
-        <div class="box">
-            <span class="expiry">5+ days</span>
-            <img src="images/Pineapple.jpg" alt="">
-            <h3>Pineapple</h3>
-            <h6 class="price"> £1.75 </h6>
-            <div class="quantity">
-                <span>Quantity: </span>
-                <input type="number" min="1" max="1000" value="1">
-                <span> /kg </span>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">£0</span>
+                <br><br>
+                <strong class="total-number">Total number of items: </strong>
             </div>
-            <button href="#" class="btn">Add to cart</button>
-        </div>
-
-        <div class="box">
-            <span class="expiry">4+ days</span>
-            <img src="images/grape.jpg" alt="">
-            <h3>Green Grapes 500G</h3>
-            <h6 class="price">£2.00</h6>
-            <div class="quantity">
-                <span>Quantity: </span>
-                <input type="number" min="1" max="1000" value="1">
-                <span></span>
-            </div>
-            <button href="#" class="btn">Add to cart</button>
-        </div>
-
-        <div class="box">
-            <span class="expiry">3+ days</span>
-            <img src="images/raspberries.jpg" alt="">
-            <h3>Raspberries 250g</h3>
-            <h6 class="price"> £3.00</h6>
-            <div class="quantity">
-                <span>Quantity: </span>
-                <input type="number" min="1" max="1000" value="1">
-                <span>£0.12/each</span>
-            </div>
-            <button href="#" class="btn">Add to cart</button>
-        </div>
-
-        <div class="box">
-            <span class="expiry">1+ weeks</span>
-            <img src="images/apple.jpg" alt="">
-            <h3>Gala Apple 5 pack</h3>
-            <h6 class="price"> £1.70</h6>
-            <div class="quantity">
-                <span>Quantity:</span>
-                <input type="number" min="1" max="1000" value="1">
-                <span> £0.28/each</span>
-            </div>
-            <button href="#" class="btn">Add to cart</button>
-        </div>
-
-        <div class="box">
-            <span class="expiry">3+ days</span>
-            <img src="images/strawberries.jpg" alt="">
-            <h3>strawberries 600g</h3>
-            <h6 class="price">£3.00</h6>
-            <div class="quantity">
-                <span>Quantity: </span>
-                <input type="number" min="1" max="1000" value="1">
-                <span>£0.25/each </span>
-            </div>
-            <button href="#" class="btn">Add to cart</button>
-        </div>
-
-        <div class="box">
-            <span class="expiry">1+ weeks</span>
-            <img src="images/watermelon.jpg" alt="">
-            <h3>watermelon</h3>
-            <h6 class="price">£3.10 </h6>
-            <div class="quantity">
-                <span>Quantity: </span>
-                <input type="number" min="1" max="1000" value="1">
-                <span> /kg </span>
-            </div>
-            <button href="#" class="btn">Add to cart</button>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- product section ends -->
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
 
 
-<!-- footer section starts  -->
-
-<section class="footer">
+      <section class="footer">
 
     <div class="box-container">
 
         <div class="box">
             <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Fruits&Co</a>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam culpa sit enim nesciunt rerum laborum illum quam error ut alias!</p>
-            <div class="share">
-                <a href="#" class="btn fab fa-linkedin"></a>
-            </div>
         </div>
         
 
         <div class="box">
             <h3>Quick links</h3>
             <div class="links">
-                <a href="ighellache.github.io">Portfolio</a>
-                <a href="ighellache.github.io/commentbox">Leave a review</a>
                 <a href="https://www.creativehealthyfamily.com/top-10-reasons-why-you-need-to-eat-fruit/">Why you should eat fruit</a>
             </div>
         </div>
@@ -225,11 +191,5 @@
 
 </section>
 
-<!-- footer section ends -->
-
-
-<!-- custom js file link  -->
-<script type="text/javascript" src="/fruit.js" defer></script>
-    
-</body>
+    </body>
 </html>
